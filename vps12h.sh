@@ -12,9 +12,6 @@ sudo apt install vlc
 sudo apt-get install rar unrar -y
 dpkg --add-architecture i386 && apt-get update && apt-get install wine32
 sudo apt install mkvtoolnix mkvtoolnix-gui
-sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
-sudo apt-get update
-sudo apt-get install qbittorrent
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
