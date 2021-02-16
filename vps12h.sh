@@ -1,5 +1,5 @@
 #! /bin/bash
-printf "Installing RDP Be Patience... " >&2
+printf "vps installed by motdulieu... " >&2
 {
 sudo useradd -m motdulieu
 sudo adduser motdulieu sudo
