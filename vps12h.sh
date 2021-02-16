@@ -6,12 +6,6 @@ sudo adduser motdulieu sudo
 echo 'motdulieu:1234' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
-sudo apt install firefox
-sudo apt install --assume-yes --fix-broken
-sudo apt install vlc
-sudo apt-get install rar unrar -y
-dpkg --add-architecture i386 && apt-get update && apt-get install wine32
-sudo apt install mkvtoolnix mkvtoolnix-gui
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
@@ -22,7 +16,13 @@ sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
-sudo apt install nautilus nano -y 
+sudo apt install nautilus nano -y
+sudo apt install vlc
+sudo apt-get install rar unrar -y
+dpkg --add-architecture i386 && apt-get update && apt-get install wine32
+sudo apt install mkvtoolnix mkvtoolnix-gui
+sudo apt -y install obs-studio
+sudo apt -y install firefox
 sudo adduser motdulieu chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
@@ -31,6 +31,7 @@ printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - motdulieu -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
+printf 'Your SUDO Pasword Is 1234 \n'
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
