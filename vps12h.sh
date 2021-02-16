@@ -16,6 +16,7 @@ sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
+sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y
 sudo apt install vlc
 sudo apt-get install rar unrar -y
@@ -31,7 +32,7 @@ printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - motdulieu -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
-printf 'Your SUDO Pasword Is 1234 \n'
+printf 'Your SUDO Pasword: 1234 \n'
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
