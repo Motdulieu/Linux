@@ -10,8 +10,6 @@ sudo apt install firefox
 sudo apt install --assume-yes --fix-broken
 sudo apt-get install rar unrar -y
 dpkg --add-architecture i386 && apt-get update && apt-get install wine32
-sudo add-apt-repository ppa:persepolis/ppa
-sudo apt install persepolis
 sudo apt install mkvtoolnix mkvtoolnix-gui
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
 sudo apt-get update
