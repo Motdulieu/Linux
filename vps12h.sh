@@ -8,6 +8,7 @@ sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 sudo apt install firefox
 sudo apt install --assume-yes --fix-broken
+sudo apt install vlc
 sudo apt-get install rar unrar -y
 dpkg --add-architecture i386 && apt-get update && apt-get install wine32
 sudo apt install mkvtoolnix mkvtoolnix-gui
